@@ -1,0 +1,296 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+
+ .topnav {
+   display:flex; /*source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+   align-items: center;
+   padding: 30px;
+ }
+
+ nav {
+   flex-grow: 1; /*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow */
+   text-align: right;
+ }
+
+ nav ul {
+   display: inline-block; /*Align divs in a row ---- Source: 
+   https://stackoverflow.com/questions/15172520/advantages-of-using-displayinline-block-vs-floatleft-in-css*/
+   list-style: none;
+ }
+
+ nav ul li {
+   display: inline-block;
+   margin-right: 75px; 
+ }
+
+ nav ul li:hover {
+  
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.topnav img:hover {
+  background: white;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+ a { 
+   text-decoration: none;
+   color: #333;
+   text-align: center;
+ }
+
+ p { 
+   color: #333;
+ }
+
+ .container {
+   max-width: 1500px;
+   padding-left: 90px;
+   padding-right: 90px;
+   
+ }
+
+ .row {
+   align-items: center;
+   flex-wrap: wrap; /*flex items break into multiple lines 
+   source: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+   display: flex; 
+   
+ }
+ .column {
+   /*flex-basis: 50%; /*both columns will occupy 50% of space*/
+   min-width: 300px;
+
+
+ }
+ .column img {
+   max-width: 100%;
+   padding: 50px 0;
+
+
+ }
+
+ .column h1 { 
+   font-size: 50px;
+   line-height: 50px;
+   margin: 20px 90px;
+ }
+ .column p { 
+  margin: 20px 90px;
+}
+
+.purple-button {
+  display: inline-block;
+  background: #966B9D;
+  padding: 8px 30px;
+  border-radius: 48px;
+  border: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.04em;
+}
+#home-purple-button {
+  display: inline-block;
+  background: #966B9D;
+  padding: 8px 30px;
+  border-radius: 48px;
+  border: 0px;
+  margin-left: 90px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.04em;
+}
+.backdrop {
+  background: #F5C5FD;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+
+  
+
+}
+
+
+.purple-button:hover {
+  background: gray;
+
+}
+
+/* -------Menu--------*/
+
+.bun-container {
+  max-width: 90%; 
+  margin: auto; 
+  
+
+}
+.menu-column {
+  flex-basis: 20%; 
+  border-color:#976c9e;
+  background: white;
+  margin: 10px;
+  padding: 50px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  border: 5px dotted;
+}
+
+.menu-column img{
+  width: 100%;
+}
+
+
+.bun-row {
+  justify-content: space-between;
+  margin: 100px auto 60px;
+}
+select {
+  border: 1px solid #966B9D;
+  padding: 5px;
+}
+select:focus {
+  outline: none;
+}
+.page-title {
+  text-align: center;
+  font-size: 40px;
+  color: #966B9D;
+}
+
+
+.menu-column p {
+  font-size: 16px;
+}
+
+.menu-column .purple-button {
+  align-items: center;
+}
+
+/*-----bun bun product----*/
+
+.bunbun-product {
+  margin-top:80px;
+  border: 5px dotted;
+  border-color:#976c9e;
+  background: white;
+}
+
+.bunbun-product img {
+  width: 90%;
+}
+
+.bunbun-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bunbun-product p {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.product-backdrop {
+  background: #F5C5FD;
+  width: 100%;
+  height: 100px;
+
+  
+
+}
+
+.product-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-price table{
+  width: 100%;
+  max-width:350px;
+}
+
+/*<---------Cart--------->*/
+
+
+
+.bun-cart{
+  margin: 100px auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;/*takes full width of webpage*/
+  border-color: #966B9D;
+}
+
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align:left;
+  padding: 5px;
+  border: 0.7px solid;
+  border-color: #966B9D
+  
+}
+td {
+  padding: 30px 5px; 
+  border: 0.7px solid;
+  border-color: #966B9D
+}
+
+
+
+td a {
+  color:red;
+
+}
+td img{
+
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.totalPriceSection{
+  display: flex;
+  justify-content: flex-end; 
+  /*pushes items to end of line ource: https://css-tricks.com/almanac/properties/j/justify-content/*/
+}
+
+.totalPriceSection table{
+  border-top: 2px solid #966B9D;
+  max-width:300px;/*sets width of price section table*/
+}
+
+
+/*<----------Footer----------->*/
+.footer {
+  text-align: center;
+  padding-bottom: 1.5px;
+  background-color: #966B9D;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.footer p {
+ color: #ffffff;
+}
+
+

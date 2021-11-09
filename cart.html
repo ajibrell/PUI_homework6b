@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Your Cart | Bun Bun Bake Shop</title>
+        <!------------Style Sheets------------>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-------------------------------Styles------------------------------------->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!------------------------------JavaScript----------------------------------->
+         
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+    <body onload="getCart()">
+        
+        
+            <!--------------------------------Navigation-------------------------------->
+    
+            <div class="product-backdrop">  
+                <div class="container">
+                    <div class="topnav">
+                      <nav>
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="menu.html">Menu</a></li>
+                          <li><a href="ourstory.html">Our Story</a></li>
+                          <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                      </nav>
+                      <img src="https://img.icons8.com/ios/50/000000/shopping-cart.png" width="20px" height="20px">
+                      <span id='cart-items'></span>
+                    </div> 
+                    </div>
+                </div> 
+
+                <!----------------------------Cart Page Content-------------------------->
+
+                <div class="bun-cart">
+
+                    <div class="bun-row">
+
+                        <h2 class="page-title">Your Cart</h2>
+
+                      </div>
+
+                    <table>
+                        <tr>
+                            <th>Bun Bun</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        <tbody id='cartList'></tbody>
+                        
+                    </table>
+
+                    <div class="totalPriceSection">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td id='subTotal'></td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td id='taxAmount'></td>
+                            </tr>
+                            <tr>
+                                <td >Total</td>
+                                <td id='totalSaleAmount'></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+    </body>
+    </html>
